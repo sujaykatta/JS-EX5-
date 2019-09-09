@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: #555555;
+  color: white;
+  border: 2px solid #555555;
+}
+
+.button1:hover {
+  background-color: white;
+  color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+     /* margin-top: 10px;*/
+    /*border-radius: 5px;*/
+    background: #000;
+    /* border: 1px solid #333; */
+    width: 20%;
+    color: white;
+    text-align: center;
+    height: 500px;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+.bodycol {
+      background-color: #e9ebee;
+    color: #1d2129;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body class="bodycol" style="background-image:url('C:\Users\Sujay\Desktop\web-components-tutorial-master\tyolo\images\background.jpg');">
+
+<ul>
+<li><img src="C:\Users\Sujay\Desktop\web-components-tutorial-master\tyolo\images\logo.svg" class="logo " style="float:left;width:62px;height:66px;margin-left: 15px"> </li>
+  <!-- <li><a class="active" href="#home">Home</a></li> -->
+</ul>
+
+<div class="row">
+  <div class="column side">
+    <h2 style="    margin-top: 35%;
+    width: 100%;">Welcome</h2>
+    <p>This site provide you post and <br>comment to a given post </p>
+  </div>
+  
+  <div class="column middle">
+    <p style="    color: darkcyan;">To write a Post you need to press the button below after that it will redirect you to the next page where you can add another post or you can comment to the given post </p>
+      
+<a href="C:\Users\Sujay\Desktop\web-components-tutorial-master\tyolo\main.html" class="button button1">Create a Post</a>
+
+  </div>
+  
+
+</div>
+</body>
+</html>
